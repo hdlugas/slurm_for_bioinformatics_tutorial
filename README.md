@@ -2,14 +2,17 @@
 
 This repository is intended to be a tutorial for implementing common bioinformatics tasks with the job scheduler Slurm on a High-Performance Computing (HPC) cluster. This tutorial may be useful for anybody using Slurm as a job scheduler on an HPC cluster but is created with researchers using Wayne State University's HPC cluster (i.e. WSU's Grid) in mind. Much of the information in this tutorial can be found on WSU's Grid's tutorials page ([https://tech.wayne.edu/kb/high-performance-computing/hpc-tutorials](https://tech.wayne.edu/kb/high-performance-computing/hpc-tutorials)) or by consulting the Slurm documentation ([https://slurm.schedmd.com/documentation.html](https://slurm.schedmd.com/documentation.html)).
 
-## Table of Contents
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 1. [Getting Started](#getting_started)
    - [Create Grid Account](#create_account)
    - [Logging into the Grid](#loggin_in)
       - [Mac OS / Linux](#logging_in_mac_linux)
       - [Windows](#logging_in_windows)
    - [Navigating in Linux](#navigating)
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Getting Started
 ### Create Grid Account
