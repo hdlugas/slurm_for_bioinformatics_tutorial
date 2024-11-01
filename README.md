@@ -15,19 +15,25 @@ This repository is intended to be a tutorial for implementing common bioinformat
 ### 1.1 Create Grid Account
 To WSU's HPC cluster, you must first apply for a Grid account which can be done via the "Renew or request Grid account tab" on WSU's HPC homepage ([https://tech.wayne.edu/hpc](https://tech.wayne.edu/hpc)).
 
-###<a name="logging-in"></a>  1.2 Logging into the Grid
+ <a name="logging-in"></a>
+### 1.2 Logging into the Grid
 It is recommended to connect to the Grid using ssh (which stands for Secure Shell Protocol) which is a method allowing one to access computers over an unsecured network.
 #### 1.2.1 Mac OS / Linux
-If you are using Mac OS X or Linux, open up a terminal window 1 , and run
-ssh (your AccessID)@grid.wayne.edu
-where of course you replace (your AccessID) with your own AccessID. For
-example, since my AccessID is fy7392, I type “ssh fy7392@grid.wayne.edu”
-to log into the grid. You will then be prompted for your password; here you
-use the same password you always use to log into Academica or Blackboard.
-You may 2 then have to go through the “two-factor authentication” process:
-you can opt for a text message to be sent to your cellphone, or to get an
-automated phone call. Either way, the phone number you have on file in
-WSU’s records will be used.
+If you are using Mac OS X or Linux, open up a terminal window, and run
+```
+ssh (AccessID)@grid.wayne.edu
+```
+where (AccessID) is replaced with your own AccessID. For
+example, since my AccessID is fy7392, I run the command:
+```
+ssh fy7392@grid.wayne.edu
+```
+to connect to the grid. You will then be prompted for your WSU password which is the same password 
+you use to log into WSU Academica. You should then be prompted with a QR code and instructions
+to set-up Google Authenticator. This will require you download the Google Authenticator app
+on a smartphone, tablet, or computer. Once you installed Google Authenticator and scanned the QR 
+code, when you connect to the Grid in the future, you will input your WSU password, press enter, 
+and then input your WSU HPC secret token found in your Google Authenticator app.
 
 #### 1.2.2 Windows
 If you are using Windows, download and install the PuTTY ssh client from
