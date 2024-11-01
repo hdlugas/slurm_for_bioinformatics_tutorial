@@ -1,28 +1,36 @@
 # Slurm for Bioinformatics Tutorial
 
-# Table of Contents
-1. [Example](#example)
-2. [Example2](#example2)
-   2. (a)[Example2a](#example2a)
-   3. (a)[Example2a](#example2a)
-4. [Third Example](#third-example)
-5. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+A brief description of your project goes here.
 
+## Table of Contents
 
-## Example
-hello
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+   - [Prerequisites](#prerequisites)
+   - [Setup](#setup)
+3. [Usage](#usage)
+   - [Basic Usage](#basic-usage)
+   - [Advanced Features](#advanced-features)
+4. [Contributing](#contributing)
+5. [License](#license)
 
-## Example2
-world
+## Introduction
 
-### Example2a
-asdf
-### Example2b
-;ljk
+Provide an introduction to your project. Explain its purpose, features, and any relevant background information.
 
-## Third Example
-again
+## Installation
 
-## [Fourth Example](http://www.fourthexample.com) 
-here
+### Prerequisites
 
+List any prerequisites for your project, such as software or libraries that need to be installed.
+
+### Setup
+
+Step-by-step instructions on how to set up your project locally.
+
+```bash
+# Example command
+git clone https://github.com/yourusername/yourproject.git
+cd yourproject
+```
+hello world
