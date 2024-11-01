@@ -10,10 +10,6 @@ This repository is intended to be a tutorial for implementing common bioinformat
       - [Mac OS / Linux](#logging_in_mac_linux)
       - [Windows](#logging_in_windows)
    - [Navigating in Linux](#navigating)
-3. [Usage](#usage)
-   - [Basic Usage](#basic-usage)
-   - [Advanced Features](#advanced-features)
-4. [Contributing](#contributing)
 
 ## Getting Started
 ### Create Grid Account
