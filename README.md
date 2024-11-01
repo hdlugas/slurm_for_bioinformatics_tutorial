@@ -4,11 +4,11 @@ This repository is intended to be a tutorial for implementing common bioinformat
 
 
 ## Table of Contents
-- [1. Getting Started](#getting_started)
-   - [1.1 Create Grid Account](#create_account)
-   - [1.2 Logging into the Grid](#loggin_in)
-      - [1.2.1 Mac OS / Linux](#logging_in_mac_linux)
-      - [1.2.2 Windows](#logging_in_windows)
+- [1. Getting Started](#getting-started)
+   - [1.1 Create Grid Account](#create-account)
+   - [1.2 Logging into the Grid](#logging-in)
+      - [1.2.1 Mac OS / Linux](#logging-in-mac-linux)
+      - [1.2.2 Windows](#logging-in-windows)
    - [1.3 Navigating in Linux](#navigating)
 
 ## 1. Getting Started
