@@ -52,14 +52,8 @@ here you enter your AccessID.
 ### 1.3 Navigating in Linux
 <a name="shell-prompt"></a>
 #### 1.3.1 Linux Shell Prompt
-Once you are logged into the Grid, you will see a shell prompt like that shown below except with fy7392 replaced with your AccessID.
-```
-[fy7392@warrior ~]$
-```
-The prompt consists of two primary parts:
+Once you are logged into the Grid, you will see a shell prompt like `fy7392@warrior ~]$` except with fy7392 replaced with your AccessID. The shell prompt consists of two primary parts:
   * Node: "warrior" is the name of the node of the server which you are logged into by default when you first log into the Grid. The "warrior" node is not to be used for running heavy computations and is instead used to schedule jobs (which can involve heavy computations) to be run on other nodes. All available nodes can be found on WSU's HPC webpage ([https://tech.wayne.edu/hpc/nodes](https://tech.wayne.edu/hpc/nodes)).
   * Path to current working directory: The tilde symbol ~ refers to your home directory (note that directories and folders are the same thing). The command `pwd` shows you the full path to your current directory (i.e. pwd stands for path to working directory), which is always your home directory by default when you first log in. Note that only you have permission to read, write, and execute all files in your home directory (or subdirectories of your home directory) with perhaps the system administrators of the Grid being the only exceptions. The 2TB of disk space allotted to us in our home directories is typically not enough for working with Next-Generating Sequencing data bioinformaticians work with, and if you are a member of the Biostatistics and Bioinformatics Core here at Karmanos Cancer Institute / WSU, you should create a subdirectory of our BBC's directory /rs/rs_grp_bbc/ for your project. If you do not have the necessary permission to navigate to our BBC directory, please let me know and we will request that you obtain read, write, and execute privileges for our directory. As of November 2024, we have 50TB of disk space allotted to us in our BBC directory. Note that (i) creating and (ii) navigating among directories are covered elsewhere in this tutorial.
-
-
 
 
