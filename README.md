@@ -15,7 +15,7 @@ This repository is intended to be a tutorial for implementing common bioinformat
 ### 1.1 Create Grid Account
 To WSU's HPC cluster, you must first apply for a Grid account which can be done via the "Renew or request Grid account tab" on WSU's HPC homepage ([https://tech.wayne.edu/hpc](https://tech.wayne.edu/hpc)).
 
-### 1.2 Logging into the Grid
+###<a name="logging-in"></a>  1.2 Logging into the Grid
 It is recommended to connect to the Grid using ssh (which stands for Secure Shell Protocol) which is a method allowing one to access computers over an unsecured network.
 #### 1.2.1 Mac OS / Linux
 If you are using Mac OS X or Linux, open up a terminal window 1 , and run
