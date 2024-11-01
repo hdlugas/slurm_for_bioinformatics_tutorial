@@ -1,10 +1,10 @@
 # Slurm for Bioinformatics Tutorial
 
-A brief description of your project goes here.
+This repository is intended to be a tutorial for implementing common bioinformatics tasks with the job scheduler Slurm on a High-Performance Computing (HPC) cluster. This tutorial may be useful for anybody using Slurm as a job scheduler on an HPC cluster but is created with researchers using Wayne State University's HPC cluster (i.e. WSU's Grid) in mind.
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
+1. [Getting Started](#getting_started)
 2. [Installation](#installation)
    - [Prerequisites](#prerequisites)
      - [a](#a)
@@ -16,9 +16,10 @@ A brief description of your project goes here.
 4. [Contributing](#contributing)
 5. [License](#license)
 
-## Introduction
+## Getting Started
 
-Provide an introduction to your project. Explain its purpose, features, and any relevant background information.
+To WSU's HPC cluster, you must first apply for a Grid account which can be done via the "Renew or request Grid account tab" on WSU's HPC homepage ([https://tech.wayne.edu/hpc](https://tech.wayne.edu/hpc)).
+
 
 ## Installation
 
