@@ -12,7 +12,10 @@ This repository is intended to be a tutorial for implementing common bioinformat
       - [1.3.1 Linux Shell Prompt](#shell-prompt)
       - [1.3.2 Navigating, Creating, and Removing Directories](#navigating)
       - [1.3.3 Creating and Editing Files](#editing)
-      - [1.3.4 Asterisk * Usage](#asterisk)
+      - [1.3.4 Asterisk Symbol](#asterisk)
+      - [1.3.5 View Disk Space Usage](#disk-space)
+      - [1.3.6 Grep](#grep)
+      - [1.3.7 Pipe, >, and >> Operators](#operators)
 
 
 <a name="getting-started"></a>
@@ -49,7 +52,7 @@ here you enter your AccessID.
 #### 1.3.1 Linux Shell Prompt
 Once you are logged into the Grid, you will see a shell prompt like `fy7392@warrior ~]$` except with fy7392 replaced with your AccessID. The shell prompt consists of two primary parts:
   * Node: "warrior" is the name of the node of the server which you are logged into by default when you first log into the Grid. The "warrior" node is not to be used for running heavy computations and is instead used to schedule jobs (which can involve heavy computations) to be run on other nodes. All available nodes can be found on WSU's HPC webpage ([https://tech.wayne.edu/hpc/nodes](https://tech.wayne.edu/hpc/nodes)).
-  * Path to current working directory: The tilde symbol ~ refers to your home directory (note that directories and folders are the same thing). The command `pwd` shows you the full path to your current directory (i.e. pwd stands for path to working directory), which is always your home directory by default when you first log in. Note that only you have permission to read, write, and execute all files in your home directory (or subdirectories of your home directory) with perhaps the system administrators of the Grid being the only exceptions. The 2TB of disk space allotted to us in our home directories is typically not enough for working with Next-Generating Sequencing data bioinformaticians work with, and if you are a member of the Biostatistics and Bioinformatics Core here at Karmanos Cancer Institute / WSU, you should create a subdirectory of our BBC's directory /rs/rs_grp_bbc/ for your project. If you do not have the necessary permission to navigate to our BBC directory, please let me know and we will request that you obtain read, write, and execute privileges for our directory. As of November 2024, we have 50TB of disk space allotted to us in our BBC directory. Note that (i) creating and (ii) navigating among directories are covered elsewhere in this tutorial.
+  * Path to current working directory: The tilde symbol ~ refers to your home directory (note that directories and folders are the same thing). The command `pwd` shows you the full path to your current working directory (i.e. pwd stands for path to working directory), which is always your home directory by default when you first log in. Note that only you have permission to read, write, and execute all files in your home directory (or subdirectories of your home directory) with perhaps the system administrators of the Grid being the only exceptions. The 2TB of disk space allotted to us in our home directories is typically not enough for working with Next-Generating Sequencing data bioinformaticians work with, and if you are a member of the Biostatistics and Bioinformatics Core here at Karmanos Cancer Institute / WSU, you should create a subdirectory of our BBC's directory /rs/rs_grp_bbc/ for your project. If you do not have the necessary permission to navigate to our BBC directory, please let me know and we will request that you obtain read, write, and execute privileges for our directory. As of November 2024, we have 50TB of disk space allotted to us in our BBC directory. Note that (i) creating and (ii) navigating among directories are covered elsewhere in this tutorial.
 
 <a name="navigating"></a>
 #### 1.3.2 Navigating, Creating, and Removing Directories
@@ -62,7 +65,7 @@ make sure that you are certain that you really do want to delete whatever direct
 create a subdirectory of 'scripts' called 'preprocessing', we could navigate to the 'scripts' directory with `cd scripts` and then run `mkdir preprocessing`. Alternatively, we could specify 
 the absolute path of the directory to create by running `mkdir /wsu/home/fy/fy73/fy7392/RNAseq/scripts/preprocessing` (with my AccessID replaced by yours), which will create 
 the desired directory regardless of your current working directory. To list all non-hidden files and subdirectories in your current working directory, run `ls` (note ls stands for list). 
-You can navigate to your home directory by running `cd ~` or `cd` regardless of your current working directory.
+You can navigate to your home directory by running `cd ~` or `cd` regardless of your current working directory. To view the structure of all files and subdirectories in your current working directory, run `tree`.
 
 <a name="editing"></a>
 #### 1.3.3 Creating and Editing Files
@@ -72,7 +75,7 @@ to use Nano. To edit a file with Nano - regardless of whether the file already e
 and then press Ctrl+O to write (i.e. save) the file and Ctrl+X to exit nano. 
 
 <a name="asterisk"></a>
-#### 1.3.4 Asterisk * usage 
+#### 1.3.4 Asterisk Symbol 
 The asterisk symbol is very useful to familiarize yourself with. To illustrate an example of how it can be used, 
 navigate to your home directory (e.g. run `cd ~`) and create five new directories 
 with `mkdir scRNAseq_OCT2024 scRNAseq_NOV2024 bulkRNAseq_AUG2024 bulkRNAseq_OCT2024 WGS_SEP2024`. 
@@ -83,6 +86,19 @@ To list all files and subdirectories in your current working directory containin
 The asterisk symbol * behaves similarly if used in most other Bash commands too. For example, if we want to remove 
 all files and subdirectories of the current working directory ending in 'OCT2024', we can run `rm -r *OCT2024`.
 
+<a name="disk-space"></a>
+#### 1.3.5 View Disk Space Usage
+To view the amount of disk space in your home directory that (i) you currently are using and (ii) you have available, run `wsuquota`. 
+To view the amount of disk space consumed by every file in your current working directory, you can run `du` (du stands for disk space usage). 
+To make the output more human-readable, you can add the -h flag: `du -h`. If there are lots of files in the subdirectories of your current working directory, you 
+can display the disk space consumed by all files and subdirectories in your current working directory with `du -h --max-depth 1`.
+
+<a name="grep"></a>
+#### 1.3.6 Grep
+Grep is a command-line tool used for searching a text-based file for a specified regular expression.
+
+<a name="operators"></a>
+#### 1.3.7 Pipe, >, and >> Operators
 
 
 
