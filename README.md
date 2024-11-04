@@ -26,10 +26,10 @@ To WSU's HPC cluster, you must first apply for a Grid account which can be done 
 
 <a name="logging-in"></a>
 ### 1.2 Logging into the Grid
-It is recommended to connect to the Grid using ssh (which stands for Secure Shell Protocol) which is a method allowing one to access computers over an unsecured network.
+It is recommended to connect to the Grid using ssh (which stands for Secure Shell Protocol) which is a method allowing one to access remote computers over an unsecured network.
 <a name="logging-in-mac-linux"></a>
 #### 1.2.1 Mac OS / Linux
-If you are using Mac OS X or Linux, open up a terminal window, and run `ssh (AccessID)@grid.wayne.edu` where (AccessID) is replaced with your own AccessID. For example, since my AccessID is fy7392, I run the command `ssh fy7392@grid.wayne.edu` to connect to the grid. You will then be prompted for your WSU password which is the same password 
+If you are using Mac OS X or Linux, open a terminal window, and run `ssh (AccessID)@grid.wayne.edu` where (AccessID) is replaced with your own AccessID. For example, since my AccessID is fy7392, I run the command `ssh fy7392@grid.wayne.edu` to connect to the grid. You will be prompted for your WSU password which is the same password 
 you use to log into WSU Academica. You should then be prompted with a QR code and instructions
 to set-up Google Authenticator. This will require you download the Google Authenticator app
 on a smartphone, tablet, or computer. Once you have installed Google Authenticator and scanned the QR 
